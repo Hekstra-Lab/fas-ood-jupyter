@@ -1,5 +1,5 @@
 ---
-name: Jupyter Notebook - General
+name: Jupyter Notebook - Local Install Only
 cluster: "odyssey3"
 attributes:
   modules: null
