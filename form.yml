@@ -1,6 +1,6 @@
 ---
 name: Jupyter Notebook - General
-cluster: "academic"
+cluster: "odyssey3"
 attributes:
   modules: null
   extra_jupyter_args: ""
