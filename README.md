@@ -28,6 +28,14 @@ fi
     - `git@github.com:Hekstra-Lab/fasrc-ood-jupyter.git` if you want to sue `ssh`. This requires having an `ssh` key configured on the cluster and registered with your github account.
  9) Click "Submit"
 
+### Launching
+ 1) Go to the vdi [homepage](https://vdi.rc.fas.harvard.edu)
+ 2) Click on the Deveop dropdown and go to "My Sanbox Apps (Development)"
+ 3) Click on "Launch Jupyter Notebook - Local install only"
+ 4) Fill out the form and click submit
+
+When the notebook is ready, a "Connect to Jupyter" button will appear. 
+
 ### RC VPN
  - General [instructions](https://docs.rc.fas.harvard.edu/kb/vpn-setup/) for the RC VPN are available in the FASRC docs
  - Linux specific instructions using `openconnect` [here](https://docs.rc.fas.harvard.edu/kb/linux-vpn/)
