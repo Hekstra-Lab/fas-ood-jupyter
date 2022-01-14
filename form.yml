@@ -2,24 +2,40 @@
 name: Jupyter Notebook - Local Install Only
 cluster: "odyssey3"
 attributes:
-  modules: null
+  modules: 
+    label: "Extra module strings to load"
+    value: null
+    widget: text_field
+
   extra_jupyter_args: ""
-  course: atg_general
+  course: life
   custom_time:
     label: "Allocated Time (expressed in MM , or HH:MM:SS , or DD-HH:MM)."
     value: "04:00:00"
     widget: text_field
-  bc_queue: "odyssey3"
+  bc_queue:
+    label: "SLURM partition"
+    value: "test"
+    widget: text_field
   custom_email_address:
     label: email address for status notification
     widget: text_field
   
-  custom_memory_per_node: 4
+  custom_memory_per_node:
+    label: "Memory in GB"
+    value: "4"
+    widget: "number_field"
   
+  custom_num_cores:
+    label: "Number of CPU cores"
+    value: "2"
+    widget: "number_field"
   
-  custom_num_cores: 2
-  
-  custom_num_gpus: 0 
+  custom_num_gpus:
+    label: "GPUs to allocate"
+    value: "0"
+    widget: "number_field"
+
   jupyter_version: harvardat_jupyter-general-small_e1eda52d.sif
   custom_reservation: null
   envscript: null
