@@ -27,8 +27,8 @@ module list
 
 <%- unless context.conda_env.blank? -%>
 
-# Load the require modules
-module load <%= context.conda_env %>
+# activate the conda environement you want
+conda activate <%= context.conda_env %>
 
 <%- end -%>
 
