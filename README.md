@@ -14,6 +14,8 @@ if [[ $(hostname) != *login* ]]; then
 fi
 ```
 
+Or you can put the name of a personal conda environment with jupyter in the `conda environment` text field in the request form. It will activate that environment and start jupyter there.
+
 ### Installation
  1) First, you need to [enable the FAS RC VPN](#rc-vpn)
  2) Create a new folder in your home directory on the RC cluster
