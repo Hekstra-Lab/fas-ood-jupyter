@@ -7,12 +7,25 @@ attributes:
     value: null
     widget: text_field
 
+  conda_env: 
+    label: "Which conda environment to use"
+    value: base
+    widget: text_field
+  
   extra_jupyter_args: ""
   course: life
   custom_time:
     label: "Allocated Time (expressed in MM , or HH:MM:SS , or DD-HH:MM)."
     value: "04:00:00"
     widget: text_field
+  
+  custom_uselab:
+    label: "Use Jupyter Lab instead of Jupyter Notebook"
+    widget: check_box
+    value: 1
+    help: |
+          _JupyterLab is the next generation of Jupyter, and is completely compatible with existing Jupyter Notebooks._
+
   bc_queue:
     label: "SLURM partition"
     value: "test"

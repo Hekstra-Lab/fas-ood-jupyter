@@ -24,8 +24,19 @@ module load <%= context.modules %>
 module list
 <%- end -%>
 
+
+<%- unless context.conda_env.blank? -%>
+
+# Load the require modules
+module load <%= context.conda_env %>
+
+<%- end -%>
+
 # Benchmark info
 echo "TIMING - Starting jupyter at: $(date)"
+
+<%- if context.uselab.to_i.zero? -%> 
+
 jupyter notebook \
            --ip='0.0.0.0' \
            --port=${MY_JUP_PORT} \
@@ -36,5 +47,16 @@ jupyter notebook \
            --NotebookApp.allow_origin='*' \
            --NotebookApp.disable_check_xsrf=True
 
+<%- else -%>
+jupyter lab \
+           --ip='0.0.0.0' \
+           --port=${MY_JUP_PORT} \
+           --port-retries=0 \
+           --NotebookApp.password="${MY_JUP_PASSWD}" \
+           --NotebookApp.base_url="${MY_JUP_BASEURL}" \
+           --no-browser \
+           --NotebookApp.allow_origin='*' \
+           --NotebookApp.disable_check_xsrf=True
 
+<%- end -%>
 
