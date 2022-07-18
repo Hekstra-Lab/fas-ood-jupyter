@@ -25,6 +25,14 @@ module list
 <%- end -%>
 
 
+<%- unless context.pathfiles.blank? -%>
+
+# Source the path 
+source <%= context.pathfiles %>
+
+<%- end -%>
+
+
 <%- unless context.conda_env.blank? -%>
 
 # activate the conda environement you want

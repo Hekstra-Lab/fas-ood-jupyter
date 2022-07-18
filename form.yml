@@ -7,6 +7,11 @@ attributes:
     value: null
     widget: text_field
 
+  pathfiles: 
+    label: "Extra path files to source"
+    value: null
+    widget: text_field
+
   conda_env: 
     label: "Which conda environment to use"
     value: base
