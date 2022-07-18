@@ -63,6 +63,7 @@ attributes:
 
 form:
   - modules
+  - pathfiles
   - conda_env
   - extra_jupyter_args
   - course
