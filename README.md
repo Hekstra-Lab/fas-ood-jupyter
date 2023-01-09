@@ -2,7 +2,7 @@
 OnDemand app for serving Jupyter notebooks out of your local path 
 
 ### Prerequisites
-You must have Jupyter installed and in your path. Most users will want to do this through Anaconda. Anaconda can, owing to filesystem latency, take a very
+You must have Jupyter installed in your path. Most users will want to do this through Anaconda. Anaconda can, owing to filesystem latency, take a very
 long time to load on the FASRC cluster. A nice workaround is to ensure that Jupyter is only loaded from the compute nodes. One easy way to do this is
 to look at the hostname and only activate conda if it does not contain the string `login`. This can be accomplished by putting the following in your `.bashrc`
 
