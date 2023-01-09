@@ -10,3 +10,6 @@ script:
    <%- if !custom_num_gpus.to_i.zero? -%>
     - "--gres=gpu:<%= custom_num_gpus.to_i %>"
    <%- end -%>
+   <%- unless custom_constraint.blank? -%>
+    - "--constraint:<%= custom_constraint %>"
+   <%- end -%>

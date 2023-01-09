@@ -48,6 +48,11 @@ attributes:
     label: "GPUs to allocate"
     value: "0"
     widget: "number_field"
+  
+  custom_constraint:
+    label: "Constraint"
+    value: null
+    widget: "text_field"
 
   jupyter_version: harvardat_jupyter-general-small_e1eda52d.sif
   custom_reservation: null
@@ -66,6 +71,7 @@ form:
   - custom_memory_per_node
   - custom_num_cores
   - custom_num_gpus
+  - custom_constraint
   - custom_time
   - jupyter_version
   - envscript
