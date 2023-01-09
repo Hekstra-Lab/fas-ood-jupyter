@@ -11,5 +11,5 @@ script:
     - "--gres=gpu:<%= custom_num_gpus.to_i %>"
    <%- end -%>
    <%- unless custom_constraint.blank? -%>
-    - "--constraint:<%= custom_constraint %>"
+    - "--constraint=<%= custom_constraint %>"
    <%- end -%>
