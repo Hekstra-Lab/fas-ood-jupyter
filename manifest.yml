@@ -1,5 +1,5 @@
 ---
-name: Jupyter Notebook - Local install only
+name: CustomizedJupyter
 category: Interactive Apps
 subcategory: Servers
 role: batch_connect

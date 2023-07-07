@@ -16,6 +16,12 @@ attributes:
     label: "Which conda environment to use"
     value: base
     widget: text_field
+
+  working_dir: 
+    label: "Working Directory"
+    value: null
+    widget: text_field
+    help: Absolute path to desired working directory. Will be your personal home directory if not specified.
   
   extra_jupyter_args: ""
   course: life
@@ -70,6 +76,7 @@ form:
   - modules
   - pathfiles
   - conda_env
+  - working_dir
   - extra_jupyter_args
   - course
   - bc_queue

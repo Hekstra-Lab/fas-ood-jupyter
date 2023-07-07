@@ -6,20 +6,24 @@ echo "TIMING - Starting main script at: $(date)"
 # source bashrc
 source $HOME/.bashrc
 
-# Set working directory to home directory
+# Set working directory
 cd ${HOME}
 
-#
-# Start Jupyter Notebook Server
-#
+<%- unless context.working_dir.blank? -%>
+
+cd <%= context.working_dir %>
+
+<%- end -%>
+
+# Purge the module environment to avoid conflicts
+module purge xxx
+
+## Load python mega module to use mamba
+module load python/3.10.9-fasrc01
 
 <%- unless context.modules.blank? -%>
-# Purge the module environment to avoid conflicts
-module purge
-
 # Load the require modules
-module load <%= context.modules %>
-
+module load <%= context.modules %>  
 # List loaded modules
 module list
 <%- end -%>
@@ -36,7 +40,7 @@ source <%= context.pathfiles %>
 <%- unless context.conda_env.blank? -%>
 
 # activate the conda environement you want
-conda activate <%= context.conda_env %>
+mamba activate <%= context.conda_env %>
 
 <%- end -%>
 
