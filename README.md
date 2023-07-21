@@ -53,7 +53,7 @@ You must have a conda/mamba environment with jupyter lab/notebook installed insi
 ### Installation
  1) First, you need to [enable the FAS RC VPN](#rc-vpn)
  2) Create a new folder in your home directory on the RC cluster
-    `mkdir ~/fasrc/dev`
+    `mkdir ~/.fasrcood/dev`
  3) Navigate to the Open OnDemand app [page](https://rcood.rc.fas.harvard.edu/pun/sys/dashboard)
  4) Click on the `</> Develop` dropdown (top right) and go to "My SandBox Apps (Development)"
  5) Click on "New App" (top left)
