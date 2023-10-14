@@ -58,7 +58,7 @@ attributes:
   custom_num_gpus:
     label: "GPUs to allocate"
     value: "0"
-    widget: "number_field"
+    widget: text_field
   
   custom_constraint:
     label: "Constraint"
