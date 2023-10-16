@@ -61,7 +61,7 @@ You must have a conda/mamba environment with jupyter lab/notebook installed insi
  7) Fill in some suitable directory name. This will determine the name of the directory inside `~/fasrc/dev` used for this project
  8) Paste the following into the "Git remote" dialog box
     ```shell
-     https://github.com/Hekstra-Lab/fasrc-ood-jupyter.git
+    https://github.com/Hekstra-Lab/fasrc-ood-jupyter.git
     ```
  9)  Click "Submit"
 
