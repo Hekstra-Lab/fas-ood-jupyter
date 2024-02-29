@@ -16,10 +16,10 @@ cd <%= context.working_dir %>
 <%- end -%>
 
 # Purge the module environment to avoid conflicts
-module purge xxx
+module purge
 
 ## Load python mega module to use mamba
-module load python/3.10.9-fasrc01
+module load Mambaforge/23.3.1-fasrc01
 
 <%- unless context.modules.blank? -%>
 # Load the require modules
