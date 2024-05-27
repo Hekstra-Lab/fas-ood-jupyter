@@ -24,10 +24,10 @@ module load Mambaforge/23.3.1-fasrc01
 <%- unless context.modules.blank? -%>
 # Load the require modules
 module load <%= context.modules %>  
-# List loaded modules
-module list
 <%- end -%>
 
+# List loaded modules
+module list
 
 <%- unless context.pathfiles.blank? -%>
 
@@ -36,6 +36,8 @@ source <%= context.pathfiles %>
 
 <%- end -%>
 
+# List all mamba envs
+mamba env list
 
 <%- unless context.conda_env.blank? -%>
 
